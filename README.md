@@ -14,7 +14,6 @@ assets/
   sounds/        UI / notification sounds (.wav)
   svg/           icons (.svg)
 
-planner-maps/        generated stage maps (source for assets/planner-maps)
 planner-maps.js      script that renames raw map exports into the naming scheme
 planner-maps-yaga.js variant of the above for a different input layout
 homemade.json            metadata for community-made badges (see below)
@@ -29,15 +28,13 @@ Raw map exports are dropped into an `input/` folder (gitignored) and normalized
 into `<stageId>-<mode>-<type>.png` by the generator scripts:
 
 ```bash
-node planner-maps.js        # reads input/,           writes planner-maps/
-node planner-maps-yaga.js   # reads input/overhead/,  writes planner-maps-new/
+node planner-maps.js        # reads input/,           writes assets/planner-maps/
+node planner-maps-yaga.js   # reads input/overhead/,  writes assets/planner-maps/
 ```
 
 - **stageId** — numeric id derived from the stage abbreviation (`ScG` → `0`, …).
 - **mode** — game mode (`SZ`, `RM`, `CB`, …).
 - **type** — map variant: `OVER` (overhead), `MINI` (minimap), `ITEMS`.
-
-After generating, move/copy the results into `assets/planner-maps/` to ship them.
 
 ## Homemade badges
 

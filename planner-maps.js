@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const inputFolder = path.join(__dirname, "input");
-const outputFolder = path.join(__dirname, "planner-maps");
+const outputFolder = path.join(__dirname, "assets", "planner-maps");
 
 fs.readdir(inputFolder, (err, files) => {
   for (const file of files) {
