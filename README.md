@@ -11,6 +11,7 @@ assets/
   badges/        badge animations (.gif)
   img/           general images, mostly .avif (+ some .png/.gif)
   planner-maps/  stage maps for the build planner (.png)
+  scanner/       glyph & planner-signature atlases for the sendou.ink scanner
   sounds/        UI / notification sounds (.wav)
   svg/           icons (.svg)
 
